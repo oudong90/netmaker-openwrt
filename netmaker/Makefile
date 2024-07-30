@@ -8,7 +8,7 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=netmaker
-PKG_VERSION:=0.9.4
+PKG_VERSION:=0.17.0
 PKG_RELEASE:=1
 
 PKG_SOURCE_PROTO:=git
