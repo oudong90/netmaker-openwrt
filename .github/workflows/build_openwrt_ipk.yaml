@@ -50,7 +50,7 @@ jobs:
         echo "Building ${{ matrix.branch }} branch."
 
         # build ipk
-        docker run -t --rm -e OPENWRT_BRANCH="${{ matrix.branch }}" -v `pwd`:/src sbilly/openwrt-builder:latest /bin/bash scripts/build_ipk.sh ${{ matrix.branch }}
+        docker run -t --rm -e OPENWRT_BRANCH="${{ matrix.branch }}" -v `pwd`:/src sbilly/openwrt-builder:latest /bin/bash $GITHUB_WORKSPACE/scripts/build_ipk.sh ${{ matrix.branch }}
 
     # Upload release
     - name: Upload binaries to release
