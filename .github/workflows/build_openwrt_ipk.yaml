@@ -17,7 +17,7 @@ jobs:
     name: 'Build ipk for openwrt branches'
     strategy:
       matrix:
-        branch: ["openwrt-21.02", "master"]
+        branch: ["openwrt-21.02"]
     runs-on: ubuntu-latest
     # Use the Bash shell regardless whether the GitHub Actions runner is ubuntu-latest, macos-latest, or windows-latest
     defaults:
