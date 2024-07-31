@@ -1,4 +1,5 @@
 name: 'Build docker image'
+
 on: 
   # Auto build on push to main branch
   push:
@@ -16,8 +17,8 @@ jobs:
     name: 'Build ipk for openwrt branches'
     strategy:
       matrix:
-        branch: ["openwrt-18.06", "openwrt-19.07", "openwrt-21.02", "master"]
-    runs-on: ubuntu-latest
+        branch: ["openwrt-21.02", "master"]
+    runs-on: ubuntu-22.04
     # Use the Bash shell regardless whether the GitHub Actions runner is ubuntu-latest, macos-latest, or windows-latest
     defaults:
         run:
